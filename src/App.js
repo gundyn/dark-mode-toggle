@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './theme';
+import { lightTheme, darkTheme } from './components/theme';
 import { GlobalStyles } from './global';
+
+// Search Bar
+import SearchPage from './components/SearchPage'
 
 function App() {
   // Toggle funcionality
@@ -24,6 +27,9 @@ function App() {
         <GlobalStyles />
         <button onClick={toggleTheme}>Toggle theme</button>
         <h1>It's a light theme!</h1>
+        <div className="App">
+          <SearchPage />
+        </div>
         <footer>
         </footer>
       </div>
@@ -32,3 +38,5 @@ function App() {
 }
 
 export default App;
+
+
