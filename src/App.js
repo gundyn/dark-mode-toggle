@@ -4,7 +4,7 @@ import { lightTheme, darkTheme } from './components/theme';
 import { GlobalStyles } from './global';
 
 // Search Bar
-// import SearchPage from './components/SearchPage'
+import SearchPage from './components/SearchPage'
 
 function App() {
   // Toggle funcionality
@@ -28,6 +28,7 @@ function App() {
         <button onClick={toggleTheme}>Toggle theme</button>
         <h1>It's a light theme!</h1>
         <div className="App">
+          <SearchPage />
           <h3>SearchBar in progress</h3>
         </div>
         <footer>
