@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const SearchBar = ({ keyword, setKeyword }) => {
+const SearchBar = ({input:keyword, onChange:setKeyword})  => {
+  // console.log('SearchBar props: ', props)
   const BarStyling = {width:"20rem", background:"#F2F1F9", border:"none", padding:"0.5rem" }
+  // const [keyword, setKeyword] = useState()
+  
+  
   
   return (
     <input

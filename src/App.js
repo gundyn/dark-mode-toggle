@@ -5,10 +5,12 @@ import { GlobalStyles } from './global';
 
 // Search Bar
 import SearchPage from './components/SearchPage'
+// import SearchBar from './components/SearchBar'
 
 function App() {
   // Toggle funcionality
   const [theme, setTheme] = useState('light')
+  
 
   // The function that toggles between themes
   const toggleTheme = () => {
@@ -27,12 +29,16 @@ function App() {
         <GlobalStyles />
         <button onClick={toggleTheme}>Toggle theme</button>
         <h1>It's a light theme!</h1>
-        <div className="App">
+        <div>
           <SearchPage />
           <h3>SearchBar in progress</h3>
+          <SearchPage />
         </div>
+        
         <footer>
+        
         </footer>
+        
       </div>
     </ThemeProvider>
   );

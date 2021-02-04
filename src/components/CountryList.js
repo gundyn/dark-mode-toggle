@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CountryList = ({countryList=[]}) => {
+  
   return (
     <div>
       { countryList.map((data, index) => {

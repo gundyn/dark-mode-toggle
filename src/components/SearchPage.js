@@ -28,14 +28,16 @@ const SearchPage = (props) => {
   
   return (
     <div>
-      <h1>Country List</h1>
       <SearchBar
         input={input}
         onChange={updateInput}
       />
+      <h1>Country List</h1>
       <CountryList countryList={countryList}/>
     </div>
   )
 }
+
+
 
 export default SearchPage
