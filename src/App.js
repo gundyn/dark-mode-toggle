@@ -7,6 +7,15 @@ import { GlobalStyles } from './global';
 import SearchPage from './components/SearchPage'
 // import SearchBar from './components/SearchBar'
 
+// Progress Bar
+import ProgressBar from './components/progress-bar'
+
+const testData = [
+  { bgcolor: "#6A1B9A", completed: 60 },
+  { bgcolor: "#00695C", completed: 30 },
+  { bgcolor: "#EF6C00", completed: 53 },
+]
+
 function App() {
   // Toggle funcionality
   const [theme, setTheme] = useState('light')
@@ -33,6 +42,11 @@ function App() {
           <SearchPage />
           <h3>SearchBar in progress</h3>
           <SearchPage />
+        </div>
+        <div className="Bar">
+          {testData.map((item, idx) => (
+            <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+          ))}
         </div>
         
         <footer>
