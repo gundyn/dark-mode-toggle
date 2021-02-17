@@ -4,7 +4,7 @@ import { lightTheme, darkTheme } from './components/theme';
 import { GlobalStyles } from './global';
 
 // Search Bar
-import SearchPage from './components/SearchPage'
+// import SearchPage from './components/SearchPage'
 // import SearchBar from './components/SearchBar'
 
 // Progress Bar
@@ -37,12 +37,7 @@ function App() {
       <div>
         <GlobalStyles />
         <button onClick={toggleTheme}>Toggle theme</button>
-        <h1>It's a light theme!</h1>
-        <div>
-          <SearchPage />
-          <h3>SearchBar in progress</h3>
-          <SearchPage />
-        </div>
+        
         <div className="Bar">
           {testData.map((item, idx) => (
             <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
@@ -50,13 +45,19 @@ function App() {
         </div>
         
         <footer>
-        
+          <div id="container" />
         </footer>
         
       </div>
     </ThemeProvider>
   );
 }
+
+// <div>
+//   <SearchPage />
+//   <h3>SearchBar in progress</h3>
+//   <SearchPage />
+// </div>
 
 export default App;
 
